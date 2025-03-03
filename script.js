@@ -1,10 +1,12 @@
-// JavaScript for handling dropdown interactions if needed
-const dropdown = document.querySelector('.dropdown');
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdown = document.querySelector(".dropdown");
+  const dropdownContent = document.querySelector(".dropdown-content");
 
-dropdown.addEventListener('mouseover', () => {
-  document.querySelector('.dropdown-content').style.display = 'block';
-});
+  dropdown.addEventListener("mouseenter", () => {
+    dropdownContent.style.display = "block";
+  });
 
-dropdown.addEventListener('mouseout', () => {
-  document.querySelector('.dropdown-content').style.display = 'none';
+  dropdown.addEventListener("mouseleave", () => {
+    dropdownContent.style.display = "none";
+  });
 });

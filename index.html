@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+<<<<<<< Updated upstream
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+=======
+  <meta name="description" content="Crimson Owl Tech provides cutting-edge AI, IoT, and embedded systems solutions for manufacturing and healthcare industries.">
+<meta name="keywords" content="AI, IoT, embedded systems, manufacturing, healthcare, technology solutions">
+>>>>>>> Stashed changes
   <title>Crimson Owl Tech</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,32 +17,93 @@
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li class="dropdown">
-          <a href="#">Our Products</a>
+          <a href="#">Our Products ▾</a>
           <ul class="dropdown-content">
             <li><a href="#">Manufacturing</a></li>
-            <li><a href="#">Healthcare</a></li>
+            <li class="dropdown">
+              <a href="#">Healthcare ▾</a>
+              <ul class="dropdown-content sub-dropdown">
+                <li><a href="foodmanagement.html">Food Management</a></li>
+                <li><a href="#">Sanitizer</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+  
 
   <div class="video-background">
     <video autoplay muted loop id="bg-video">
       <source src="Starry Night.mp4" type="video/mp4">
     </video>
     <div class="overlay">
-      <div class="content">
-        <h1>Launching Soon</h1>
-        <p>Crimson Owl Tech is on its way!</p>
+      <div class="hero-content">
+        <h1>Innovating Manufacturing & Healthcare</h1>
+        <p>Empowering industries with AI, IoT, and embedded systems.</p>
+        <div class="cta-buttons">
+          <a href="#about" class="cta-button">Learn More</a>
+          <a href="#contact" class="cta-button">Contact Us</a>
+        </div>
       </div>
     </div>
   </div>
 
+  <div class="introduction-section" id="about">
+    <div class="intro-content">
+      <h2>Cutting-Edge Solutions for a Smarter Future</h2>
+      <p>
+        At <strong>Crimson Owl Tech</strong>, we drive efficiency and innovation through AI-driven solutions tailored for manufacturing and healthcare industries.
+      </p>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="service-section">
+      <h2>Our Services</h2>
+      <div class="service-item">
+        <h3>Tailored Technology Solutions</h3>
+        <p>Real-time data tracking, workflow automation, and secure system integration for seamless operations.</p>
+      </div>
+      <div class="service-item">
+        <h3>Predictive Models & Smart Automation</h3>
+        <p>AI-driven insights and predictive maintenance for reducing downtime and optimizing decision-making.</p>
+      </div>
+      <div class="service-item">
+        <h3>End-to-End Software Development</h3>
+        <p>Custom software solutions to streamline operations and enhance workflow efficiency.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to discuss a potential collaboration? Reach out to us!</p>
+      <div class="contact-info">
+        <p><strong>Phone:</strong> +91 8660095124</p>
+        <p><strong>Email:</strong> crimsonowltech@gmail.com</p>
+        <p><strong>Address:</strong> Bangalore India</p>
+      </div>
+      <div class="contact-form">
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Crimson Own Tech. All rights reserved.</p>
+    <p>&copy; 2025 Crimson Owl Tech. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
