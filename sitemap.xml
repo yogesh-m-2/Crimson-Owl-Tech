@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.crimsonowltech.com/</loc>
+    <loc>/</loc>
     <lastmod>2025-03-07</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.crimsonowltech.com/aboutus.html</loc>
+    <loc>/aboutus.html</loc>
     <lastmod>2025-03-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.crimsonowltech.com/foodmanagement.html</loc>
+    <loc>/foodmanagement.html</loc>
     <lastmod>2025-03-07</lastmod>
     <priority>0.7</priority>
   </url>
