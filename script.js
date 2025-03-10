@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const dropdown = document.querySelector(".dropdown");
-  const dropdownContent = document.querySelector(".dropdown-content");
+  const dropdown = document.querySelector(".nav-dropdown");
+  const dropdownContent = document.querySelector(".nav-dropdown-content");
 
   dropdown.addEventListener("mouseenter", () => {
     dropdownContent.style.display = "block";

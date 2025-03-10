@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food Management System | Crimson Owl Tech</title>
-  
+  <link rel="stylesheet" href="styles.css">
   <style>
     * {
       margin: 0;
@@ -35,6 +35,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: max-height 0.3s ease;
+      overflow: hidden;
+      max-height: 0;
+    }
+
+    .nav-links.active {
+      max-height: 500px; /* Adjust as needed */
     }
 
     .nav-links li {
@@ -157,6 +164,7 @@
 <body>
     <header>
         <nav>
+          <div class="menu-toggle" onclick="toggleMenu()">☰</div>
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li class="dropdown">
@@ -182,8 +190,8 @@
   <section class="container">
     <h2>Food Management System</h2>
     <p>
-      The **Food Management System** is a web-based platform designed for **hospitals** to streamline food ordering 
-      and dietary management. It enables **patients**, **staff**, and **dietitians** to interact with a digital food menu.
+      The <strong>Food Management System</strong> is a web-based platform designed for <strong>hospitals</strong> to streamline food ordering 
+      and dietary management. It enables <strong>patients</strong>, <strong>staff</strong>, and <strong>dietitians</strong> to interact with a digital food menu.
     </p>
   </section>
 
@@ -191,11 +199,11 @@
   <section class="container">
     <h2>Key Features</h2>
     <ul style="text-align: left; display: inline-block;">
-      <li>📌 **Patients** can browse menus and order food from the hospital canteen.</li>
-      <li>📌 **Staff** can manage food orders and deliveries to patient rooms.</li>
-      <li>📌 **Dietitians** can prescribe meals and dietary plans for patients.</li>
-      <li>📌 **Admins** can control food availability, pricing, and categories.</li>
-      <li>📌 **Delivery personnel** can update real-time order status.</li>
+      <li>📌 <strong>Patients</strong> can browse menus and order food from the hospital canteen.</li>
+      <li>📌 <strong>Staff</strong> can manage food orders and deliveries to patient rooms.</li>
+      <li>📌 <strong>Dietitians</strong> can prescribe meals and dietary plans for patients.</li>
+      <li>📌 <strong>Admins</strong> can control food availability, pricing, and categories.</li>
+      <li>📌 <strong>Delivery personnel</strong> can update real-time order status.</li>
     </ul>
   </section>
 
@@ -215,5 +223,12 @@
       <a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>

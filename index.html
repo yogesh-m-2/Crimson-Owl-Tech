@@ -11,6 +11,7 @@
   <meta property="og:image" content="https://www.crimsonowltech.com/crimson_owl.jpeg">
   <meta property="og:url" content="https://www.crimsonowltech.com">
   <title>Crimson Owl Tech | AI & IoT Solutions</title>
+  <link rel="icon" href="crimson_owl.jpeg" type="image/jpeg">
   <link rel="stylesheet" href="styles.css">
 
 <script type="application/ld+json">
@@ -41,9 +42,10 @@
 <body>
   <header>
     <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul class="nav-links">
-        <li><a href="#"><img src="crimson_owl.jpeg" alt="Crimson Owl Tech Logo"></a></li>
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html"><img src="crimson_owl.jpeg" alt="Crimson Owl Tech Logo"></a></li>
+        <li><a href="index.html">Home</a></li>
         <li class="dropdown">
           <a href="#">Our Products ▾</a>
           <ul class="dropdown-content">
@@ -153,6 +155,11 @@
       const message = form.message.value;
       const whatsappUrl = `https://wa.me/918660095124?text=${encodeURIComponent(`${message}\nName: ${name}\nEmail: ${email}`)}`;
       window.open(whatsappUrl, '_blank');
+    }
+
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
     }
   </script>
 </body>
