@@ -125,7 +125,7 @@
         <p><strong>Address:</strong> VO-303, WeWork Vaishnavi Signature, No. 78/9, Outer Ring Road, Bellandur Village, Varthur Hobli, Bengaluru, Karnataka 560103</p>
       </div>
       <div class="contact-form">
-        <form action="#" method="post">
+        <form id="contactForm" onsubmit="redirectToWhatsApp(event)">
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
           <textarea name="message" placeholder="Your Message" required></textarea>
@@ -144,5 +144,16 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    function redirectToWhatsApp(event) {
+      event.preventDefault();
+      const form = document.getElementById('contactForm');
+      const name = form.name.value;
+      const email = form.email.value;
+      const message = form.message.value;
+      const whatsappUrl = `https://wa.me/918660095124?text=${encodeURIComponent(`${message}\nName: ${name}\nEmail: ${email}`)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
 </body>
 </html>
