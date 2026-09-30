@@ -3,164 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Crimson Owl Tech - AI, IoT, and embedded solutions for businesses. We develop AI-powered web & mobile apps, embedded systems, and smart automation solutions.">
-  <meta name="keywords" content="Crimson Owl Tech, AI solutions, IoT, embedded systems, software development, machine learning, business automation">
-  <meta name="author" content="Crimson Owl Tech">
-  <meta property="og:title" content="Crimson Owl Tech - AI & IoT Solutions">
-  <meta property="og:description" content="We solve operational challenges with AI, IoT, and embedded systems. Our smart solutions optimize workflows, automate processes, and drive business growth.">
-  <meta property="og:image" content="https://www.crimsonowltech.com/crimson_owl.jpeg">
-  <meta property="og:url" content="https://www.crimsonowltech.com">
-  <title>Crimson Owl Tech | AI & IoT Solutions</title>
+  <meta name="description" content="Crimson Owl Tech - independent technology and R&D initiative working across software, AI, IoT, embedded systems and engineering development.">
+  <title>Crimson Owl Tech | Technology & R&D</title>
   <link rel="icon" href="crimson_owl.jpeg" type="image/jpeg">
-  <link rel="stylesheet" href="styles.css">
-
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Crimson Owl Tech",
-      "url": "https://www.crimsonowltech.com",
-      "logo": "https://www.crimsonowltech.com/crimson_owl.jpeg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91 8660095124",
-        "contactType": "customer service",
-        "email": "crimsonowltech@gmail.com"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "VO-303 WeWork Vaishnavi Signature, No. 78/9, Outer Ring Road, Bellandur Village, Varthur Hobli",
-        "addressLocality": "Bengaluru",
-        "addressRegion": "Karnataka",
-        "postalCode": "560103",
-        "addressCountry": "IN"
-      }
-    }
-  </script>
-
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:#0d0f18;color:#eef0f5;line-height:1.6}
+    header{position:fixed;top:0;left:0;width:100%;z-index:10;background:rgba(13,15,24,.92);border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(10px)}
+    nav{max-width:1150px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-weight:700;font-size:18px}
+    .brand img{width:42px;height:42px;object-fit:contain;border-radius:8px}
+    .nav{display:flex;gap:8px;list-style:none}.nav a{color:#cfd2dc;text-decoration:none;padding:9px 13px;border-radius:8px}.nav a:hover{color:#fff;background:rgba(255,255,255,.07)}
+    .hero{position:relative;min-height:88vh;padding:145px 22px 80px;display:flex;align-items:center;overflow:hidden;background:#0d0f18}
+    .hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0}
+    .hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(9,10,16,.75),rgba(9,10,16,.55) 45%,#0d0f18 96%);z-index:1}
+    .wrap{position:relative;z-index:2;max-width:1050px;margin:auto;width:100%}
+    .eyebrow{color:#ff5369;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
+    h1{font-size:clamp(44px,7vw,78px);line-height:1.02;max-width:900px;margin-bottom:22px}
+    .hero p{font-size:21px;color:#b9bdc9;max-width:760px;margin-bottom:30px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}.button{display:inline-block;padding:12px 21px;border-radius:8px;text-decoration:none;font-weight:700}.primary{background:#e52f4d;color:#fff}.secondary{border:1px solid rgba(255,255,255,.2);color:#fff}
+    section{padding:78px 22px}.light{background:#f5f6f8;color:#242733}.section-head{max-width:1050px;margin:0 auto 35px}.section-head p{color:#6b707d;max-width:760px}h2{font-size:36px;margin-bottom:12px}
+    .grid{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;color:#242733;padding:28px;border-radius:15px;border:1px solid rgba(0,0,0,.08);box-shadow:0 8px 25px rgba(20,20,30,.06)}.card h3{font-size:21px;margin-bottom:10px}.card p{color:#6b707d}.dark-card{background:#151925;color:#eef0f5;border-color:rgba(255,255,255,.08);box-shadow:none}.dark-card p{color:#adb2c0}
+    .project{max-width:1050px;margin:auto;background:#151925;border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:35px}.project h3{font-size:28px;margin-bottom:10px}.project p{color:#b3b8c5;max-width:800px}.project-link{display:inline-block;margin-top:18px;color:#ff667a;text-decoration:none;font-weight:700}
+    .contact{background:#171a26;text-align:center}.contact p{color:#b8bdc9;max-width:650px;margin:0 auto 25px}.contact-box{max-width:650px;margin:auto;background:#0d0f18;border:1px solid rgba(255,255,255,.08);border-radius:15px;padding:25px}.contact-box a{color:#ff667a;text-decoration:none}
+    footer{padding:28px 22px;text-align:center;color:#858b99;background:#0a0c13;font-size:14px}
+    @media(max-width:750px){.nav{display:none}.grid{grid-template-columns:1fr}h2{font-size:30px}.hero{min-height:80vh}}
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-      <ul class="nav-links">
-        <li><a href="index.html"><img src="crimson_owl.jpeg" alt="Crimson Owl Tech Logo"></a></li>
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="#">Our Products ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="#">Manufacturing</a></li>
-            <li class="dropdown">
-              <a href="#">Healthcare ▾</a>
-              <ul class="dropdown-content sub-dropdown">
-                <li><a href="foodmanagement.html">Food Management</a></li>
-                <li><a href="#">Sanitizer</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
+<header>
+  <nav>
+    <a class="brand" href="index.html"><img src="crimson_owl.jpeg" alt="Crimson Owl Tech logo">Crimson Owl Tech</a>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="foodmanagement.html">Products</a></li>
+      <li><a href="precision-engineering.html">Precision Engineering</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <div class="video-background">
-    <video autoplay muted loop id="bg-video">
-      <source src="Starry Night.mp4" type="video/mp4">
+<main>
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="crimson_owl.jpeg">
+      <source src="Starry%20Night.mp4" type="video/mp4">
     </video>
-    <div class="overlay">
-      <div class="hero-content">
-        <h1>Empowering Businesses with Smart Technology</h1>
-        <p>Transforming industries through AI, IoT, and embedded systems.</p>
-        <div class="cta-buttons">
-          <a href="#about" class="cta-button">Learn More</a>
-          <a href="#contact" class="cta-button">Contact Us</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="introduction-section" id="about">
-    <div class="intro-content">
-      <h2>Innovative Solutions for a Smarter Future</h2>
-      <p>
-        At <strong>Crimson Owl Tech</strong>, we drive efficiency and innovation through AI-driven solutions tailored for various industries. Our mission is to empower businesses with smart technology that optimizes processes and drives growth.
-      </p>
-    </div>
-  </div>
-
-  <section id="services">
-    <div class="service-section">
-      <h2>Our Services</h2>
-      <div class="service-item">
-        <h3>AI-Powered Web & Mobile Apps</h3>
-        <p>We develop secure, scalable web and Android applications that streamline business operations, automate workflows, and integrate seamlessly with existing systems.</p>
-      </div>
-      <div class="service-item">
-        <h3>Embedded Systems & IoT Solutions</h3>
-        <p>By leveraging embedded technology and IoT, we create intelligent systems for real-time data tracking, predictive maintenance, and automation.</p>
-      </div>
-      <div class="service-item">
-        <h3>Machine Learning & Smart Automation</h3>
-        <p>We utilize AI, deep learning, and predictive models to enable data-driven decision-making, optimize workflows, and minimize downtime.</p>
-      </div>
-      <div class="service-item">
-        <h3>Affordable AI MVPs</h3>
-        <p>We offer AI-driven Minimum Viable Products (MVPs) at an accessible price, allowing businesses to test and validate ideas efficiently.</p>
-      </div>
-      <div class="service-item">
-        <h3>Scalable, Long-Term Impact</h3>
-        <p>Our solutions are designed to grow with our clients, ensuring continuous innovation, adaptability, and long-term success.</p>
+    <div class="hero-overlay"></div>
+    <div class="wrap">
+      <div class="eyebrow">Technology • Engineering • R&D</div>
+      <h1>From technical problems to working solutions.</h1>
+      <p>Crimson Owl Tech is an independent technology and R&D initiative exploring software, AI, IoT, embedded systems and specialised engineering development.</p>
+      <div class="buttons">
+        <a class="button primary" href="#capabilities">Explore capabilities</a>
+        <a class="button secondary" href="#contact">Contact</a>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="contact-section">
-      <h2>Contact Us</h2>
-      <p>Have questions or want to discuss a potential collaboration? Reach out to us!</p>
-      <div class="contact-info">
-        <p><strong>Phone:</strong> +91 8660095124</p>
-        <p><strong>Email:</strong> yogesh@crimsonowltech.com</p>
-        <p><strong>Address:</strong> VO-303, WeWork Vaishnavi Signature, No. 78/9, Outer Ring Road, Bellandur Village, Varthur Hobli, Bengaluru, Karnataka 560103</p>
-      </div>
-      <div class="contact-form">
-        <form id="contactForm" onsubmit="redirectToWhatsApp(event)">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit" class="cta-button">Send Message</button>
-        </form>
-      </div>
+  <section id="capabilities" class="light">
+    <div class="section-head">
+      <div class="eyebrow">Capabilities</div>
+      <h2>Technology across software and hardware</h2>
+      <p>We combine software development with embedded and engineering R&D to investigate practical solutions for real-world requirements.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><h3>Software & Automation</h3><p>Web applications, workflow systems, integrations and operational automation.</p></article>
+      <article class="card"><h3>Embedded & IoT</h3><p>Embedded devices, sensors, controllers, connectivity and monitoring systems.</p></article>
+      <article class="card"><h3>Precision Engineering</h3><p>R&D on high-performance rotary interconnect (slip ring) systems for defence, aerospace and industrial applications. <a href="precision-engineering.html" style="color:#c92742;font-weight:700;text-decoration:none">Learn more →</a></p></article>
     </div>
   </section>
 
-  <footer>
-    <img src="crimson_owl.jpeg" alt="Crimson Owl Tech Logo">
-    <p>&copy; 2025 Crimson Owl Tech. All rights reserved.</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/company/crimson-owl">LinkedIn</a> | <a href="https://x.com/CrimsonOwlTech">Twitter</a> | <a href="https://www.instagram.com/crimson_owl_tech">instagram</a>
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">R&D methodology</div>
+      <h2>Understand → Design → Prototype → Validate</h2>
+      <p>New opportunities start with understanding the actual application and measurable requirements rather than assuming a product specification.</p>
     </div>
-  </footer>
+    <div class="grid">
+      <article class="card dark-card"><h3>Requirements</h3><p>Identify interfaces, operating conditions, performance, environmental and integration requirements.</p></article>
+      <article class="card dark-card"><h3>Prototype</h3><p>Develop an engineering concept and build a proof-of-concept where technically feasible.</p></article>
+      <article class="card dark-card"><h3>Validation</h3><p>Test against defined requirements and iterate before considering production.</p></article>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
-  <script>
-    function redirectToWhatsApp(event) {
-      event.preventDefault();
-      const form = document.getElementById('contactForm');
-      const name = form.name.value;
-      const email = form.email.value;
-      const message = form.message.value;
-      const whatsappUrl = `https://wa.me/918660095124?text=${encodeURIComponent(`${message}\nName: ${name}\nEmail: ${email}`)}`;
-      window.open(whatsappUrl, '_blank');
-    }
+  <section class="light">
+    <div class="section-head">
+      <div class="eyebrow">Existing work</div>
+      <h2>What we've built</h2>
+    </div>
+    <div class="project">
+      <h3>Hospital Food Management System</h3>
+      <p>A web-based platform designed to coordinate patient food ordering, dietitian meal assignment, staff operations, kitchen management and delivery workflows.</p>
+      <a class="project-link" href="foodmanagement.html">View project →</a>
+    </div>
+  </section>
 
-    function toggleMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      navLinks.classList.toggle('active');
-    }
-  </script>
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Current initiative</div>
+      <h2>What we're building</h2>
+    </div>
+    <div class="project" style="border-color:rgba(229,47,77,.3)">
+      <h3>Precision Rotary Interconnect Systems</h3>
+      <p>An early-stage R&D initiative developing high-performance slip ring technology for defence, aerospace and heavy engineering applications — currently in the design and engineering phase.</p>
+      <a class="project-link" href="precision-engineering.html">View initiative →</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let's discuss a technical problem</h2>
+    <p>For technology, software or engineering R&D requirements, contact Crimson Owl Tech to discuss the problem and determine the appropriate next step.</p>
+    <div class="contact-box">
+      <p><strong>Email:</strong> <a href="mailto:yogesh@crimsonowltech.com">yogesh@crimsonowltech.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+918660095124">+91 8660095124</a></p>
+      <p><strong>Website:</strong> <a href="https://www.crimsonowltech.com">www.crimsonowltech.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Crimson Owl Tech. All rights reserved.</footer>
 </body>
 </html>

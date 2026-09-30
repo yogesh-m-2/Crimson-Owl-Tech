@@ -3,169 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Crimson Owl Tech</title>
-  <link rel="stylesheet" href="styles.css">
-  
+  <meta name="description" content="Crimson Owl Tech - independent technology and R&D initiative focused on AI, embedded systems, IoT, software and engineering development.">
+  <title>About | Crimson Owl Tech</title>
+  <link rel="icon" href="crimson_owl.jpeg" type="image/jpeg">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
-
-    body {
-      background: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* Header Navigation */
-    header {
-      background: rgba(0, 0, 0, 0.8);
-      padding: 15px 0;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
-
-    
-
-    /* Page Sections */
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 100px auto 40px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 36px;
-      color: #333;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 20px;
-    }
-
-    /* Core Values */
-    .core-values ul {
-      list-style: none;
-      text-align: left;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .core-values li {
-      font-size: 18px;
-      margin-bottom: 15px;
-    }
-
-    .core-values li strong {
-      color: #ff4d4d;
-    }
-
-    /* Footer */
-    footer {
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 16px;
-      margin-top: 40px;
-    }
-
-    .social-links a {
-      color: white;
-      text-decoration: none;
-      padding: 0 10px;
-    }
-
-    .social-links a:hover {
-      color: #ff4d4d;
-    }
-
-   
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:#0d0f18;color:#e9eaf0;line-height:1.6}
+    header{position:fixed;top:0;left:0;width:100%;z-index:10;background:rgba(13,15,24,.92);border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(10px)}
+    nav{max-width:1150px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-weight:700;font-size:18px}
+    .brand img{width:42px;height:42px;object-fit:contain;border-radius:8px}
+    .nav{display:flex;gap:8px;list-style:none}
+    .nav a{color:#cfd2dc;text-decoration:none;padding:9px 13px;border-radius:8px}
+    .nav a:hover{color:#fff;background:rgba(255,255,255,.07)}
+    .hero{min-height:62vh;padding:150px 22px 80px;display:flex;align-items:center;background:radial-gradient(circle at 75% 20%,rgba(220,30,65,.20),transparent 35%),#0d0f18}
+    .wrap{max-width:1050px;margin:auto;width:100%}
+    .eyebrow{color:#ff5369;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:15px}
+    h1{font-size:clamp(40px,6vw,70px);line-height:1.05;max-width:850px;margin-bottom:22px}
+    .hero p{font-size:20px;color:#b9bdc9;max-width:760px}
+    section{padding:75px 22px}
+    .light{background:#f5f6f8;color:#242733}
+    .section-head{max-width:1050px;margin:0 auto 35px}
+    h2{font-size:36px;margin-bottom:12px}
+    .section-head p{color:#666b78;max-width:750px}
+    .grid{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{padding:27px;border:1px solid rgba(0,0,0,.08);border-radius:15px;background:#fff;box-shadow:0 8px 25px rgba(20,20,30,.06)}
+    .dark-card{background:#151925;border:1px solid rgba(255,255,255,.08);box-shadow:none}
+    .card h3{font-size:21px;margin-bottom:9px}
+    .card p{color:#6c7180}
+    .dark-card p{color:#adb2c0}
+    .tag{display:inline-block;margin-bottom:16px;padding:5px 9px;border-radius:20px;background:#ffe8ec;color:#c92742;font-size:12px;font-weight:700}
+    .founders{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .founder-card{display:flex;gap:18px;align-items:flex-start;padding:27px}
+    .avatar{flex-shrink:0;width:58px;height:58px;border-radius:50%;background:#e52f4d;color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700}
+    .founder-card h3{font-size:19px;margin-bottom:2px}
+    .role{display:block;color:#ff5369;font-size:13px;font-weight:700;margin-bottom:8px}
+    .founder-card p{color:#adb2c0;font-size:14.5px}
+    @media(max-width:750px){.founders{grid-template-columns:1fr}}
+    .cta{padding:80px 22px;text-align:center;background:#171a26}
+    .cta p{color:#b8bdc9;max-width:650px;margin:0 auto 24px}
+    .button{display:inline-block;background:#e52f4d;color:#fff;text-decoration:none;padding:12px 22px;border-radius:8px;font-weight:700}
+    footer{padding:28px 22px;text-align:center;color:#858b99;background:#0a0c13;font-size:14px}
+    @media(max-width:750px){.nav{display:none}.grid{grid-template-columns:1fr}h2{font-size:30px}.hero{min-height:70vh}.founder-card{flex-direction:column;align-items:flex-start}}
   </style>
 </head>
 <body>
-    <header>
-        <nav>
-          <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-          <ul class="nav-links">
-            <li><a href="index.html"><img src="crimson_owl.jpeg" alt="Crimson Owl Tech Logo"></a></li>
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-              <a href="#">Our Products ▾</a>
-              <ul class="dropdown-content">
-                <li><a href="#">Manufacturing</a></li>
-                <li class="dropdown">
-                  <a href="#">Healthcare ▾</a>
-                  <ul class="dropdown-content sub-dropdown">
-                    <li><a href="#">Food Management</a></li>
-                    <li><a href="#">Sanitizer</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-
-  <!-- Company Overview -->
-  <section class="container">
-    <h2>Who We Are</h2>
-    <p>
-      We are a dynamic startup dedicated to solving operational challenges for businesses through AI, IoT, embedded systems, and software development. 
-      Our mission is to bridge inefficiencies, optimize processes, and drive growth with smart, affordable technology solutions.
-    </p>
-  </section>
-
-  <!-- Our Approach -->
-  <section class="container">
-    <h2>Our Approach</h2>
-    <ul>
-      <li><strong>AI-Powered Web & Mobile Apps:</strong> We develop secure, scalable web and Android applications that streamline business operations, automate workflows, and integrate seamlessly with existing systems.</li>
-      <li><strong>Embedded Systems & IoT Solutions:</strong> By leveraging embedded technology and IoT, we create intelligent systems for real-time data tracking, predictive maintenance, and automation.</li>
-      <li><strong>Machine Learning & Smart Automation:</strong> We utilize AI, deep learning, and predictive models to enable data-driven decision-making, optimize workflows, and minimize downtime.</li>
-      <li><strong>Affordable AI MVPs:</strong> We offer AI-driven Minimum Viable Products (MVPs) at an accessible price, allowing businesses to test and validate ideas efficiently.</li>
-      <li><strong>Scalable, Long-Term Impact:</strong> Our solutions are designed to grow with our clients, ensuring continuous innovation, adaptability, and long-term success.</li>
+<header>
+  <nav>
+    <a class="brand" href="index.html"><img src="crimson_owl.jpeg" alt="Crimson Owl Tech logo">Crimson Owl Tech</a>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="foodmanagement.html">Products</a></li>
+      <li><a href="precision-engineering.html">Precision Engineering</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
     </ul>
-  </section>
+  </nav>
+</header>
 
-  <!-- Core Values -->
-  <section class="container core-values">
-    <h2>Our Core Values</h2>
-    <ul>
-      <li><strong>Innovation:</strong> We push boundaries to bring creative solutions to complex challenges.</li>
-      <li><strong>Reliability:</strong> Our solutions are secure, robust, and dependable.</li>
-      <li><strong>Collaboration:</strong> We believe in working together with clients and partners to drive success.</li>
-      <li><strong>Continuous Improvement:</strong> We constantly evolve to meet the market’s changing needs.</li>
-      <li><strong>Customer-Centric Approach:</strong> We tailor our solutions to real-world results.</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Crimson Owl Tech. All rights reserved.</p>
-    <div class="social-links">
-      <a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Technology • Engineering • R&D</div>
+      <h1>Building practical technology for real-world problems.</h1>
+      <p>Crimson Owl Tech is an independent technology and R&D initiative exploring solutions across software, AI, IoT, embedded systems and engineering development.</p>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    function toggleMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      navLinks.classList.toggle('active');
-    }
-  </script>
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Founders</div>
+      <h2>Who's behind Crimson Owl Tech</h2>
+    </div>
+    <div class="founders">
+      <article class="card dark-card founder-card">
+        <div class="avatar">Y</div>
+        <div>
+          <h3>Yogesh</h3>
+          <span class="role">Founder</span>
+          <p>Computer Science background, leading Crimson Owl Tech's technology and engineering initiatives.</p>
+        </div>
+      </article>
+      <article class="card dark-card founder-card">
+        <div class="avatar">S</div>
+        <div>
+          <h3>Shreya Thumma</h3>
+          <span class="role">Co-Founder</span>
+          <p>Engineer, currently pursuing an MBA at IIM Ahmedabad.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="light">
+    <div class="section-head">
+      <h2>What we do</h2>
+      <p>We focus on turning practical requirements into working prototypes and scalable technology solutions.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">SOFTWARE</span>
+        <h3>Business & Automation Systems</h3>
+        <p>Web-based systems that digitize workflows, manage operations and connect different users and processes.</p>
+      </article>
+      <article class="card">
+        <span class="tag">EMBEDDED</span>
+        <h3>Embedded & IoT Development</h3>
+        <p>Exploration and prototyping of connected devices, sensors, controllers and real-time monitoring systems.</p>
+      </article>
+      <article class="card">
+        <span class="tag">R&D</span>
+        <h3>Precision Engineering</h3>
+        <p>Early-stage R&D on high-performance rotary interconnect (slip ring) systems for defence, aerospace and industrial applications.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Approach</div>
+      <h2>Research first. Prototype next.</h2>
+      <p>For new engineering opportunities, we first understand the application and requirements, evaluate feasibility, and then move toward prototyping and validation.</p>
+    </div>
+    <div class="grid">
+      <article class="card dark-card"><h3>01 — Understand</h3><p>Study the problem, operating environment, interfaces and performance requirements.</p></article>
+      <article class="card dark-card"><h3>02 — Develop</h3><p>Design, prototype and test the technical solution using appropriate components and engineering methods.</p></article>
+      <article class="card dark-card"><h3>03 — Validate</h3><p>Iterate against measurable requirements before considering production or commercial deployment.</p></article>
+    </div>
+  </section>
+
+  <section class="light">
+    <div class="section-head">
+      <h2>Current technology portfolio</h2>
+      <p>Our work includes software products as well as exploration of embedded and engineering applications.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <h3>Food Management System</h3>
+        <p>A hospital-focused platform covering patient food ordering, dietitian meal assignment, staff operations and delivery workflows.</p>
+      </article>
+      <article class="card">
+        <h3>AI & Smart Automation</h3>
+        <p>Exploration of AI-assisted workflows, automation and data-driven operational tools.</p>
+      </article>
+      <article class="card">
+        <h3>Precision Rotary Interconnect Systems</h3>
+        <p>Currently in the design and engineering phase — high-performance slip ring technology for defence and heavy engineering applications. <a href="precision-engineering.html" style="color:#c92742;font-weight:700;text-decoration:none">Learn more →</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Have a technical requirement?</h2>
+    <p>We are interested in understanding challenging engineering and technology problems and evaluating whether a practical prototype can be developed.</p>
+    <a class="button" href="index.html#contact">Start a discussion</a>
+  </section>
+</main>
+
+<footer>© 2026 Crimson Owl Tech. All rights reserved.</footer>
 </body>
 </html>

@@ -35,18 +35,39 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: max-height 0.3s ease;
-      overflow: hidden;
-      max-height: 0;
-    }
-
-    .nav-links.active {
-      max-height: 500px; /* Adjust as needed */
     }
 
     .nav-links li {
       position: relative;
       margin: 0 20px;
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+
+      .nav-links.active {
+        max-height: 500px;
+      }
+
+      .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+      }
     }
 
     .nav-links a {
@@ -190,7 +211,7 @@
   <section class="container">
     <h2>Food Management System</h2>
     <p>
-      The <strong>Food Management System</strong> is a web-based platform designed for <strong>hospitals</strong> to streamline food ordering 
+      The <strong>Food Management System</strong> is a web-based platform designed for <strong>hospitals</strong> to streamline food ordering
       and dietary management. It enables <strong>patients</strong>, <strong>staff</strong>, and <strong>dietitians</strong> to interact with a digital food menu.
     </p>
   </section>

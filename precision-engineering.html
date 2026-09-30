@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crimson Owl Tech Precision Engineering — early-stage R&D initiative developing high-performance rotary interconnect (slip ring) technology for defence, aerospace and industrial systems.">
+  <title>Precision Engineering | Crimson Owl Tech</title>
+  <link rel="icon" href="crimson_owl.jpeg" type="image/jpeg">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:#0d0f18;color:#eef0f5;line-height:1.6}
+    header{position:fixed;top:0;left:0;width:100%;z-index:10;background:rgba(13,15,24,.92);border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(10px)}
+    nav{max-width:1150px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-weight:700;font-size:18px}
+    .brand img{width:42px;height:42px;object-fit:contain;border-radius:8px}
+    .nav{display:flex;gap:8px;list-style:none}.nav a{color:#cfd2dc;text-decoration:none;padding:9px 13px;border-radius:8px}.nav a:hover{color:#fff;background:rgba(255,255,255,.07)}
+    .nav a.active{color:#fff;background:rgba(229,47,77,.18)}
+    .hero{min-height:62vh;padding:150px 22px 70px;display:flex;align-items:center;background:radial-gradient(circle at 75% 20%,rgba(220,30,65,.20),transparent 35%),#0d0f18}
+    .wrap{max-width:1050px;margin:auto;width:100%}
+    .eyebrow{color:#ff5369;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:15px}
+    h1{font-size:clamp(38px,6vw,62px);line-height:1.08;max-width:850px;margin-bottom:20px}
+    .hero p{font-size:19px;color:#b9bdc9;max-width:740px}
+    .status-badge{display:inline-flex;align-items:center;gap:8px;margin-top:24px;padding:8px 14px;border-radius:20px;background:rgba(255,179,71,.12);border:1px solid rgba(255,179,71,.3);color:#ffb347;font-size:13px;font-weight:700}
+    .status-dot{width:8px;height:8px;border-radius:50%;background:#ffb347}
+    section{padding:75px 22px}
+    .light{background:#f5f6f8;color:#242733}
+    .section-head{max-width:1050px;margin:0 auto 35px}
+    h2{font-size:34px;margin-bottom:12px}
+    .section-head p{color:#666b78;max-width:750px}
+    .grid{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-2{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .card{padding:27px;border:1px solid rgba(0,0,0,.08);border-radius:15px;background:#fff;box-shadow:0 8px 25px rgba(20,20,30,.06)}
+    .dark-card{background:#151925;border:1px solid rgba(255,255,255,.08);box-shadow:none}
+    .card h3{font-size:20px;margin-bottom:9px}
+    .card p{color:#6c7180;font-size:15px}
+    .dark-card p{color:#adb2c0;font-size:15px}
+    .stage{max-width:1050px;margin:auto;display:flex;gap:14px;flex-wrap:wrap}
+    .stage-pill{flex:1;min-width:150px;background:#151925;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px}
+    .stage-pill.current{border-color:#ff5369;background:rgba(229,47,77,.08)}
+    .stage-pill .num{font-size:13px;color:#ff5369;font-weight:700;letter-spacing:1px;margin-bottom:6px}
+    .stage-pill h4{font-size:17px;margin-bottom:6px}
+    .stage-pill p{font-size:13px;color:#adb2c0}
+    .note{max-width:1050px;margin:30px auto 0;padding:18px 22px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:#9ba0b0;font-size:14px}
+    .cta{padding:80px 22px;text-align:center;background:#171a26}
+    .cta p{color:#b8bdc9;max-width:650px;margin:0 auto 24px}
+    .button{display:inline-block;background:#e52f4d;color:#fff;text-decoration:none;padding:12px 22px;border-radius:8px;font-weight:700}
+    footer{padding:28px 22px;text-align:center;color:#858b99;background:#0a0c13;font-size:14px}
+    @media(max-width:750px){.nav{display:none}.grid,.grid-2{grid-template-columns:1fr}h2{font-size:28px}.hero{min-height:70vh}.stage{flex-direction:column}}
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <a class="brand" href="index.html"><img src="crimson_owl.jpeg" alt="Crimson Owl Tech logo">Crimson Owl Tech</a>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="foodmanagement.html">Products</a></li>
+      <li><a href="precision-engineering.html" class="active">Precision Engineering</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Precision Engineering Division</div>
+      <h1>Precision rotary interconnect systems, developed from first principles.</h1>
+      <p>An engineering R&D initiative within Crimson Owl Tech, working toward high-performance slip ring technology — combined power and data rotary interconnects — for defence, aerospace and heavy engineering applications.</p>
+      <div class="status-badge"><span class="status-dot"></span> Early-stage — currently in design &amp; R&D phase, no product shipped yet</div>
+    </div>
+  </section>
+
+  <section class="light">
+    <div class="section-head">
+      <div class="eyebrow">The problem</div>
+      <h2>A gap in India's rotary interconnect supply chain</h2>
+      <p>High-performance rotary joints that combine power, high-speed data and RF in a single rotating assembly — used in radar antenna drives, UAV gimbals and precision industrial systems — are almost entirely imported today. The barrier is not machining capability; it is the technology architecture, contact design and validated qualification history required to be trusted in mission-critical systems.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><h3>Import dependency</h3><p>Nearly all high-performance rotary joints for radar, EW and aerospace systems are sourced from abroad.</p></article>
+      <article class="card"><h3>An unserved tier</h3><p>Basic industrial slip rings exist domestically; combined power + high-speed data + RF assemblies largely do not.</p></article>
+      <article class="card"><h3>A qualification gap</h3><p>What separates a trusted supplier from an unqualified one is validated test history — built over time, not overnight.</p></article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Our approach</div>
+      <h2>A staged platform strategy</h2>
+      <p>Rather than attempting a full-specification unit immediately, the plan validates the core mechanical and electrical contact platform first, then layers in harder channels once that base design is proven.</p>
+    </div>
+    <div class="stage">
+      <div class="stage-pill current">
+        <div class="num">STAGE 1 — CURRENT FOCUS</div>
+        <h4>Core Platform</h4>
+        <p>Architecture definition and engineering design for a power + data hybrid rotary assembly.</p>
+      </div>
+      <div class="stage-pill">
+        <div class="num">STAGE 2</div>
+        <h4>Extended Channels</h4>
+        <p>Additional signal types layered onto a validated core design.</p>
+      </div>
+      <div class="stage-pill">
+        <div class="num">STAGE 3</div>
+        <h4>High-Bandwidth Path</h4>
+        <p>Optical data path for full-bandwidth, high-channel-count applications.</p>
+      </div>
+      <div class="stage-pill">
+        <div class="num">STAGE 4</div>
+        <h4>Qualification</h4>
+        <p>Environmental and life testing toward defence-grade certification.</p>
+      </div>
+    </div>
+    <div class="note">We are currently at Stage 1: engineering design and documentation. Detailed technical specifications, fabrication drawings and test protocols are held privately and shared under NDA at the appropriate stage of a conversation.</div>
+  </section>
+
+  <section class="light">
+    <div class="section-head">
+      <div class="eyebrow">Target applications</div>
+      <h2>Who this is being built for</h2>
+    </div>
+    <div class="grid">
+      <article class="card"><h3>Defence &amp; Radar</h3><p>Antenna rotary joints and EW systems, in line with India's active defence indigenisation programme.</p></article>
+      <article class="card"><h3>Aerospace</h3><p>UAV and gimbal payload systems requiring lightweight, high-reliability rotary joints.</p></article>
+      <article class="card"><h3>Industrial Automation</h3><p>Rotary tables, robotics, and wind turbine pitch/yaw systems.</p></article>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Working on a related requirement?</h2>
+    <p>If your organisation has a current or upcoming requirement for rotary interconnect systems, or wants to discuss technical specifications and qualification standards, we'd welcome the conversation — at whatever stage is useful to you.</p>
+    <a class="button" href="index.html#contact">Get in touch</a>
+  </section>
+</main>
+
+<footer>© 2026 Crimson Owl Tech. All rights reserved.</footer>
+</body>
+</html>
